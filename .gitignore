@@ -1,0 +1,52 @@
+# ── Environment & Secrets ─────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# ── Python ────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# ── MongoDB ───────────────────────────────────────────────────────
+mongodb_data/
+mongodb_data_fresh/
+
+# ── Firebase (client-side keys — optional to exclude) ─────────────
+frontend/android/app/google-services.json
+frontend/ios/Runner/GoogleService-Info.plist
+frontend/lib/firebase_options.dart
+
+# ── Flutter / Dart ────────────────────────────────────────────────
+frontend/.dart_tool/
+frontend/.packages
+frontend/build/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+*.g.dart
+
+# ── IDE ───────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ── Logs ──────────────────────────────────────────────────────────
+*.log
+*.log.*
+
+# ── OS ────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Build artifacts ───────────────────────────────────────────────
+dist/
+build/
+*.so
+*.dylib
